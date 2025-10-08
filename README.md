@@ -1,6 +1,6 @@
 # Mental Health Chatbot
 
-A compassionate AI-powered mental health support chatbot built with pure Node.js (no external libraries) and modern frontend technologies. The project includes both a chatbot interface and a dynamic link portal for managing resources.
+A compassionate AI-powered mental health support chatbot built with pure Node.js (no external libraries) and modern frontend technologies.
 
 ## 🌟 Features
 
@@ -10,12 +10,6 @@ A compassionate AI-powered mental health support chatbot built with pure Node.js
 - **Beautiful UI**: Modern, responsive chat interface with typing indicators
 - **Quick Actions**: Pre-built conversation starters for common mental health concerns
 - **Real-time Communication**: Async frontend-backend communication
-
-### Dynamic Link Portal
-- **Resource Management**: Add, edit, and delete mental health resources and links
-- **Local Storage**: All data saved in browser localStorage
-- **Visual Interface**: Card-based layout with custom thumbnails
-- **Responsive Design**: Works on desktop and mobile devices
 
 ## 🏗️ Architecture
 
@@ -32,8 +26,7 @@ mental health chatbot/
     │   ├── config.json.template # API configuration template
     │   └── README.md           # Backend-specific documentation
     └── frontend module/
-        ├── index.html          # Alternative chatbot interface
-        └── portal icons page.html # Dynamic link portal
+        └── index.html          # Alternative chatbot interface
 ```
 
 ## 🚀 Quick Start
@@ -65,9 +58,8 @@ mental health chatbot/
    node server.js
    ```
 
-5. **Access the applications:**
+5. **Access the application:**
    - **Chatbot**: Open `http://localhost:3000` in your browser
-   - **Portal**: Open the `portal icons page.html` file directly or serve it separately
 
 ## 💻 Usage
 
@@ -76,12 +68,6 @@ mental health chatbot/
 2. Use quick action buttons or type your own message
 3. The bot will respond with empathetic, helpful guidance
 4. Supports topics like anxiety, stress, sadness, and general mental health
-
-### Dynamic Link Portal
-1. Open the portal page
-2. Click "Manage Links" to add new resources
-3. Edit or delete existing links using the icons on each card
-4. All changes are saved automatically in your browser
 
 ## 🔧 Technical Details
 
@@ -97,7 +83,6 @@ mental health chatbot/
 - **Modern CSS**: Gradient backgrounds, smooth animations, responsive design
 - **Vanilla JavaScript**: No frameworks - pure JS for maximum compatibility
 - **Fetch API**: Modern async communication with backend
-- **LocalStorage**: Client-side data persistence for the portal
 
 ### Key Endpoints
 - `GET /` - Serves the main chatbot interface
@@ -109,7 +94,6 @@ mental health chatbot/
 - **API Key Protection**: Gemini API key stored server-side only
 - **Input Validation**: Messages are validated before processing
 - **Error Handling**: Graceful degradation on API failures
-- **Local Data**: Portal links stored locally in browser (not on server)
 
 ## 🎯 Design Principles
 
@@ -117,14 +101,14 @@ mental health chatbot/
 2. **Mental Health Focus**: Empathetic, non-judgmental responses designed for emotional support
 3. **Accessibility**: Clean, readable interface with good contrast and typography
 4. **Resilience**: Works with or without internet/API connectivity
-5. **Privacy**: Minimal data collection, local storage where possible
+5. **Privacy**: Minimal data collection, secure API key handling
 
 ## 📁 File Descriptions
 
 ### Core Files
 - **`code/index.html`**: Main chatbot interface with modern UI and backend integration
 - **`code/backend module/server.js`**: Complete HTTP server with Gemini API integration
-- **`code/frontend module/portal icons page.html`**: Dynamic link management portal
+- **`code/frontend module/index.html`**: Alternative chatbot interface
 
 ### Configuration
 - **`code/backend module/config.json.template`**: Configuration template for API keys

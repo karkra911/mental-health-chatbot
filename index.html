@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .demo-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .demo-card {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+        }
+
+        .demo-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .demo-card p {
+            font-size: 0.9em;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .github-link {
+            background: #333;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .github-link:hover {
+            background: #555;
+        }
+
+        .note {
+            background: #f8f9fa;
+            border-left: 4px solid #4facfe;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .demo-links {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Mental Health Chatbot</h1>
+        <p class="subtitle">
+            A compassionate AI-powered mental health support system built with pure Node.js and modern web technologies.
+        </p>
+
+        <div class="demo-links">
+            <a href="chatbot.html" class="demo-card">
+                <div class="icon">💬</div>
+                <h3>Chatbot Demo</h3>
+                <p>Experience the user interface and design of our mental health support chatbot</p>
+            </a>
+
+            <a href="portal.html" class="demo-card">
+                <div class="icon">🔗</div>
+                <h3>Dynamic Portal</h3>
+                <p>Manage and organize mental health resources with our link management system</p>
+            </a>
+        </div>
+
+        <div class="note">
+            <strong>📝 Demo Note:</strong> This GitHub Pages demo shows the frontend interface only. 
+            The full application includes AI-powered responses via Google's Gemini API and requires a backend server.
+        </div>
+
+        <a href="https://github.com/karkra911/mental-health-chatbot" target="_blank" class="github-link">
+            📚 View Full Project on GitHub
+        </a>
+
+        <div style="margin-top: 30px; color: #666; font-size: 0.9em;">
+            <p><strong>Features:</strong> AI Integration • Fallback Responses • Modern UI • No External Dependencies • Mental Health Focus</p>
+        </div>
+    </div>
+</body>
+</html>

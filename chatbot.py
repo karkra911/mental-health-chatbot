@@ -2,6 +2,13 @@ import streamlit as st
 import random
 from textblob import TextBlob
 import time
+import nltk
+
+# Download required NLTK data (for cloud deployment)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 # Page configuration
 st.set_page_config(

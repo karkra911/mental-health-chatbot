@@ -194,6 +194,10 @@ streamlit run chatbot.py
 - System installation
 - Legacy Node.js server
 
+- ----------------
+
+demo github pages - https://karkra911.github.io/mental-health-chatbot/
+
 ### 2. Docker Deployment
 ```bash
 # Single container
